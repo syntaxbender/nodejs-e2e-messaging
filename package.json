@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-encrypted-messaging",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syntaxbender/nodejs-encrypted-messaging.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syntaxbender/nodejs-encrypted-messaging/issues"
+  },
+  "homepage": "https://github.com/syntaxbender/nodejs-encrypted-messaging#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.0.13",
+    "pug": "^3.0.2",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
+}

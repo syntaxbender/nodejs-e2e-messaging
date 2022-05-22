@@ -1,0 +1,4 @@
+/browser_test/
+/browser_test/**
+/node_modules/
+/node_modules/**

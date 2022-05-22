@@ -1,0 +1,36 @@
+div#notification{
+    z-index: 999;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+}
+div#notification div.success{
+    background: rgba(0, 77, 128, 0.7);
+    border: 1px solid rgba(0, 60, 97, 0.7);
+}
+div#notification div.error{
+    background: rgba(151, 41, 41, 0.7);
+    border: 1px solid rgba(105, 22, 22, 0.7);;
+}
+div#notification div.warn{
+    background: rgba(224, 154, 50, 0.7);
+    border:1px solid rgba(173, 110, 16, 0.7);
+}
+div#notification div.warn, div#notification div.error, div#notification div.success{
+    position: relative;
+    padding: 6px 8px;
+
+}
+div#notification div.warn div.content, div#notification div.error div.content, div#notification div.success div.content{
+    text-align: center;
+    color: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+div#notification div.warn div.close, div#notification div.error div.close, div#notification div.success div.close{
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    color: #FFF;
+}

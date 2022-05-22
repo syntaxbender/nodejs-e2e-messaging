@@ -1,0 +1,284 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    background: url(/assets/img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div#left > div, div#right > div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:5%;
+    right:5%;
+}
+div#right > div{
+    background: #ffffff1c;
+    padding: 40px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.20);
+    box-shadow: 15px 15px 30px -15px rgba(0, 0, 0, 0.20);
+    border-radius: 20px;
+    width: 530px;
+    margin: 0px auto;
+    border: 1px solid #ffffff47;
+}
+div#left > div > p:nth-of-type(2){
+    color: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0px;
+}div#left > div > p:nth-of-type(1){
+    color: #fFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+div#logo{
+    text-align: center;
+    margin:90px 0px 0px 0px;
+}
+div#logo > h1{
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    line-height: 1;
+    color: #FFF;
+    font-size: 50px;
+    font-family: 'Poppins';
+}
+div#logo > i{
+    vertical-align: top;
+    display: inline-block;
+    font-size: 30px;
+    color: #FFF;
+}
+div#container{
+    height: 100vh;
+}
+div#left{
+    position: relative;
+    background: #0000008c;
+    display:inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 30%;
+}
+div#right{
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 70%;
+}
+
+select {
+	-webkit-appearance: none;
+	display: block;
+}
+
+select>option {
+	color: #000;
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 400;
+	-webkit-transition: 300ms color;
+	-o-transition: 300ms color;
+	transition: 300ms color;
+	color: transparent;
+}
+
+input::-moz-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 400;
+	-webkit-transition: .3s color;
+	-o-transition: .3s color;
+	transition: .3s color;
+	color: transparent;
+}
+input:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 400;
+	-webkit-transition: .3s color;
+	-o-transition: .3s color;
+	transition: .3s color;
+	color: transparent;
+}
+input:-moz-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 400;
+	-webkit-transition: .3s color;
+	-o-transition: .3s color;
+	transition: .3s color;
+	color: transparent;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+	border-color: #4aa8d3;
+}
+input:focus::-webkit-input-placeholder {
+	color: #888
+}
+input:focus::-moz-placeholder {
+	color: #888
+}
+input:focus:-ms-input-placeholder {
+	color: #888
+}
+input:focus:-moz-placeholder {
+	color: #888
+}
+input[type=text]~label,
+input[type=password]~label,
+select~label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    color: #c5c5c5;
+    pointer-events: none;
+    position: absolute;
+    left: 45px;
+    top: 17px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+input[type=text]:focus~label,
+input[type=text]:disabled~label,
+input[type=text]:valid~label,
+
+input[type=password]:focus~label,
+input[type=password]:disabled~label,
+input[type=password]:valid~label {
+    top: 2px;
+    font-size: 12px;
+    color: #ababab;
+}
+input[type=submit],
+input[type=button] {
+	cursor: pointer;
+	border: 0px;
+	padding: 14px;
+	font-weight: 600;
+	font-size: 12px;
+	padding: 13px 35px;
+	text-transform: uppercase;
+	background-color: #4aa8d3;
+	border-radius: 5px;
+	color: #FFF;
+}
+input,
+select {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    color: #FFF;
+    border-bottom: 3px solid transparent;
+    padding: 20px 10px 6px 45px;
+    outline: none;
+    /* margin: 35px 0px; */
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    position: absolute;
+    bottom: 0px;
+}
+h1.loud-text{
+    letter-spacing: 4px;
+    font-size: 50px;
+    text-shadow: 5px 5px 0px #00000069;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #FFF;
+    margin: 0;
+}
+h2.quiet-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+    color: #4a1639;
+}
+div.input-class > i {
+    position: absolute;
+    color: #c5c5c5;
+    font-size: 22px;
+    left: 10px;
+    top: 15px;
+}
+div.input-class-bg-dark{
+    background: #00000080;
+}
+div.input-class-bg-blue{
+	background-color: #4aa8d3;
+}
+div.input-class-padding{
+    padding: 20px 0px 0px 0px;
+}
+div.input-class-margin{
+    margin: 20px 0px 0px 0px;
+}
+div.input-class {
+    height: 50px;
+	position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    margin:10px 0px;
+}
+div.input-class-shadow{
+    box-shadow: 10px 10px 20px -7px #0000003b;
+}
+div.input-class > div.input-button{
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    padding: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 17px 0px;
+    text-shadow: 2px 2px 5px #00000069;
+    text-transform: uppercase;
+    color: #FFF;
+    height: 100%;
+    text-align: center;
+}
+.display-none{
+    display:none;
+}
+.display-block{
+    display:block;
+}
+.display-inline-block{
+    display:inline-block;
+}
+.display-flex{
+    display:flex;
+}

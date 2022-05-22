@@ -1,0 +1,376 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div.conversation-info-img{
+    /*background: url(https://assets.fireside.fm/file/fireside-images/podcasts/images/b/bc7f1faf-8aad-4135-bb12-83a8af679756/cover.jpg);*/
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0px 20px 0px 0px;
+}
+div.conversation-title > p{
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1;
+}
+div.top-bar i.fa-arrow-left{
+    cursor:pointer;
+    margin: 0px 0px 0px 10px;
+    font-size: 24px;
+    color: #707070;
+}
+div.top-bar i.fa-bars{
+    font-size: 31px;
+    color: #bfbfbf;
+    margin: 0px 15px 0px 0px;
+}
+
+
+div.top-bar i.fa-search{
+    position: absolute;
+    left: 20px;
+    color: #bfbfbf;
+}
+div.top-bar i.fa-search.active{
+    left:54px;
+}
+div.new-conversation-button{
+    cursor:pointer;
+    background: #527f91;
+    border-radius: 50% 50%;
+    width: 85px;
+    position: absolute;
+    height: 85px;
+    color: white;
+    font-size: 90px;
+    font-family: 'Poppins';
+    box-shadow: 0px 11px 45px -14px #00000094;
+    font-weight: 100;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    align-items: center;
+}
+div.top-bar{
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    background: #e7e7e7;
+}
+input.search-top {
+    width: 100%;
+    margin: 0px 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: white;
+    padding: 9px 18px 9px 34px;
+    letter-spacing: 1px;
+}
+div.conversation-title{
+
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+div.conversation-info {
+    display: flex;
+    padding: 15px 20px;
+    background: #527f91;
+    height: 92px;
+    border-bottom: 2px solid #197fa7;
+}
+div.conversation-img{
+    /*background: url(https://assets.fireside.fm/file/fireside-images/podcasts/images/b/bc7f1faf-8aad-4135-bb12-83a8af679756/cover.jpg);*/
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    /* border: 5px solid #dbdbdb; */
+    margin: 15px 20px 15px 0px;
+}
+div#conversation-section{
+    height: calc(100vh - 57px);
+    overflow: auto;
+}
+div.conversation-addition {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+div.conversation-addition i {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0px 10px;
+    color: #476874;
+}
+div.conversation-addition > div {
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+input.conversation-search {
+    border-radius: 20px;
+    padding: 9px 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #b8e0ef;
+    width: 280px;
+    background: #476874;
+    margin: 0px 10px;
+}
+div.message-time{
+    text-align: right;
+    color: #dddddd;
+    font-weight: 500;
+    font-size: 13px;
+}
+div.conversation-message > p:nth-of-type(1) {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    color: #476874;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+div.conversation-message > p:nth-of-type(2){
+    margin: 0;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+div.conversation-area {
+    background: linear-gradient(45deg, rgba(233,251,255,1) 43%, rgba(255,233,254,1) 100%);
+    width: 100%;
+    height: calc(100% - 92px);
+    padding: 20px 20px 120px 20px;
+    overflow:auto;
+    display: block;
+}
+div.message-me::before, div.message-other::before {
+    content: '';
+    width: 0;
+    top: 0;
+    height: 0;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    z-index:-1;
+}
+div.message-me::before{
+    border-top: 15px solid #8f4277;
+    left: -11px;
+}
+div.message-other::before{
+    border-top: 15px solid #375176;
+    right: -11px;
+}
+div.message-me, div.message-other{
+    padding: 15px 15px 5px 15px;
+    width: fit-content;
+    min-width: 10%;
+    color: #FFF;
+    max-width: 80%;
+    border-radius: 7px;
+}
+div.message-me{
+    word-wrap: break-word;
+    background: #8f4277;
+}
+div.message-other{
+    margin: auto 0 auto  auto;
+    background: #375176;
+}
+div.message-area {
+    border-radius: 0px 10px 10px 10px;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+    z-index: 2;
+}
+div.message-other div.message-sender-info{
+    color: #8fbdff;
+}
+div.message-me div.message-sender-info{
+    color: #ffd5fd;
+}
+div.message-sender-info{
+    margin: -7px 0px 10px 0px;
+    font-weight: 900;
+    font-size: 13px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+div.conversation-message{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    width: calc(100% - 95px);
+    border-bottom: 1px solid #e3e3e3;
+    padding: 0px 0px;
+}
+div.conversation-message:nth-last-child(1){
+    border-color:transparent;
+}
+div.conversation{
+    cursor:pointer;
+    padding: 0px 20px;
+}
+div.conversation > div{
+    display:flex;
+}
+div#left{
+    position: relative;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 30%;
+}
+div#right{
+    overflow: hidden;
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 70%;
+}
+div.conversation.active {
+    background: #f5f5f5;
+}
+div.conversation-date {
+    margin: 20px 0px;
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    color: #000;
+}
+div#new-conversation-start{
+    border: 1px solid #c8dfe9;
+    background: #e7e7e7;
+    overflow: hidden;
+    bottom: 130px;
+    position: absolute;
+    color: #303030;
+    box-shadow: 0px 11px 45px -17px #00000094;
+    right: 30px;
+    border-radius: 20px;
+    width: 220px;
+}
+
+div#new-conversation-start > div{
+    cursor:pointer;
+    background: #e7e7e7;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    border-bottom: 1px solid #c8dfe9;
+}
+div#new-conversation-start > div:nth-last-child(1){
+    border:none;
+}
+div#new-conversation-start > div:hover{
+    background: #d9d9d9;
+}
+div#new-conversation-start i {
+    width: 30px;
+    color: #527f91;
+}
+.display-none{
+    display:none;
+}
+.display-block{
+    display:block;
+}
+.display-inline-block{
+    display:inline-block;
+}
+.display-flex{
+    display:flex;
+}
+div.conversation-sendbox{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+div.conversation-sendbox > div > i{
+    color: #476874;
+    font-size: 40px;
+}
+    div.conversation-sendbox > div{
+        cursor:pointer;
+        padding: 29px;
+    vertical-align: top;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 0px 10px 10px 0px;
+    background: #1a445461;
+}
+div.conversation-sendbox > textarea{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    color: #26434e;
+    font-weight: 300;
+    vertical-align: top;
+    outline: none;
+    padding: 10px 15px;
+    width: calc(100% - 100px);
+    resize: none;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    background: #527f9161;
+    display: inline-block;
+    height: 100px;
+    /* border: 3px solid #527f91; */
+}

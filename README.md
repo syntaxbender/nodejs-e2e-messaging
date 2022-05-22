@@ -1,1 +1,1 @@
-# nodejs-e2e-messaging
+# nodejs-encrypted-messaging

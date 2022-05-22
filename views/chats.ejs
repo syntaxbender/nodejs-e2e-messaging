@@ -1,0 +1,33 @@
+<%- include('./partial/header.ejs') %>
+
+	<body>
+		<%- include('./partial/notification.ejs') %>
+			<div id="container">
+				<div id="left">
+					<div class="top-bar"><i class="fas fa-arrow-left display-none"></i><i
+							class="fas fa-search"></i><input type="text" class="search-top" placeholder="Ara"><i
+							class="fas fa-bars"></i></div>
+					<div id="new-conversation-start" class="display-none">
+						<div id="start-new-private"><i class="fas fa-user"></i>Özel Sohbet</div>
+						<div id="start-new-group"><i class="fas fa-user-friends"></i>Grup Sohbeti</div>
+					</div>
+					<div class="new-conversation-button">+</div>
+					<div id="conversation-section">
+
+					</div>
+				</div><div id="right">
+					<div class="conversation-info">
+						<div class="conversation-info-img"></div>
+						<div class="conversation-title">
+							<p></p>
+						</div>
+						<div class="conversation-addition">
+							<div><input type="text" class="conversation-search"><i class="fas fa-search"></i><i class="fas fa-ellipsis-v"></i></div>
+						</div>
+					</div>
+					<div class="conversation-area"></div>
+					<div class="conversation-sendbox"><textarea id="mess-box"></textarea><div id="message-send-button"><i class="fas fa-paper-plane"></i></div></div>
+				</div>
+			</div>
+	</body>
+	<%- include('partial/footer.ejs') %>

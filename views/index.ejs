@@ -1,0 +1,35 @@
+<%- include('partial/header.ejs') %>
+<body>
+	<%- include('./partial/notification.ejs') %>
+	<div id="container">
+		<div id="left">
+			<div>
+				<p>Nullam sed mauris ultricies, mollis lectus id, tincidunt erat.</p>
+				<p>End to end Encrypted</p>
+				<div id="logo">
+					<i class="fab fa-slack-hash"></i><h1>social</h1>
+				</div>
+			</div>
+		</div><div id="right">
+			<div id="login-section">
+				<h1 class="loud-text">Aramıza Hoşgeldin.</h1>
+				<h2 class="quiet-text">*Öncelikle giriş yapmalısın.</h2>
+				<div id="email-field" class="input-class input-class-bg-dark input-class-padding">
+					<i class="fas fa-envelope"></i>
+					<input type="text" placeholder="E-mail Adresiniz" id="Email" required="" autofocus="">
+					<label>E-mail Adresiniz</label>
+				</div>
+				<div id="password-field" class="input-class input-class-bg-dark display-none input-class-padding">
+					<i class="fas fa-lock"></i>
+					<input type="text" placeholder="Password" id="Password" required="" autofocus="">
+					<label>Password</label>
+				</div>
+				<div class="input-class input-class-bg-blue input-class-margin input-class-shadow">
+					<div class="input-button login-button"><i class="fas fa-sign-in-alt"></i> Giriş</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html> 
+<%- include('partial/footer.ejs') %>
